@@ -1,0 +1,34 @@
+colors = {
+  black: #212121,
+  blue: #14274e,
+  nightblue: #394867,
+  white: #f1f6f9,
+  gray: #212121,
+  lightgray: #A1A1A1,
+  red: #BE5683,
+}
+
+$black-color = colors.black
+$blue-color = colors.blue
+$nightblue-color = colors.nightblue
+$white-color = colors.white
+$gray-color = colors.gray
+$lightgray-color = colors.lightgray
+$red-color = colors.red
+
+$font-content = Poppins, sans-serif
+
+tablet = "only screen and (max-width: 1012px)"
+tablet-up = "only screen and (min-width: 1013px)"
+mobile = "only screen and (max-width: 748px)"
+mobile-up = "only screen and (min-width: 749px)"
+
+.mobile-only
+	display none
+	@media mobile 
+		display block
+
+.desktop-only
+    display none
+    @media mobile-up
+        display block
