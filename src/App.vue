@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <Header/>
+      <Header />
       <transition
         mode="out-in"
         enter-active-class="animate__animated animate__fadeIn"
@@ -14,14 +14,14 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from "./components/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
-  }
-}
+  },
+};
 </script>
 
 <style lang="stylus">
@@ -33,5 +33,4 @@ export default {
   line-height 24px
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-
 </style>

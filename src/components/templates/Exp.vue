@@ -1,30 +1,30 @@
 <template>
-    <div>
-        <img :src="require(`@/assets/exp-${exp}.svg`)" :alt={alt}>
-        <div class="text">
-            <b>{{ poste }}</b>
-            <p>{{ exp }}</p>
-        </div>
+  <div>
+    <img :src="require(`@/assets/exp-${exp}.svg`)" :alt="{ alt }" />
+    <div class="text">
+      <b>{{ poste }}</b>
+      <p>{{ exp }}</p>
     </div>
+  </div>
 </template>
 
 <style lang="stylus" scoped>
 @import '../../css/variables'
     div
-        display flex 
+        display flex
         justfiy-content center
         align-items center
         margin 5vh 0
-        @media tablet 
+        @media tablet
             margin 3vh
-        img 
+        img
             height 150px
             margin 0 7vh
             @media tablet
                 height 100px
                 margin 0
-        .text 
-            display flex 
+        .text
+            display flex
             flex-direction column
             align-items flex-start
 
@@ -44,12 +44,9 @@
             @media tablet-up
                 font-size 24px
                 line-height 28px
-            
 </style>
 <script>
 export default {
-    props:['exp','alt','poste'],
-
-}
-
+  props: ["exp", "alt", "poste"],
+};
 </script>
