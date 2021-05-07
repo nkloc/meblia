@@ -173,7 +173,7 @@ section
 </style>
 
 <script>
-import Double from "../components/templates/Card.vue";
+import Card from "../components/templates/Card.vue";
 import Exp from "../components/templates/Exp.vue";
 
 export default {
