@@ -1,27 +1,43 @@
 <template>
-    <header :class="{ active: burgerMenuActive}">
-        <div>
-            <router-link to="/"> <img src="../assets/logo.svg" alt="Logo Thomas Chheang"></router-link>
-        </div>
-        <div>
-            <i @click.prevent="showMenu()" v-if="windowWidth < 749 && !burgerMenuActive" class="fas fa-bars burger"></i>
-            <i style="color: white" @click.prevent="showMenu()" v-if="windowWidth < 749 && burgerMenuActive" class="fas fa-times burger"></i>
-            <div v-if="windowWidth > 748 || burgerMenuActive" class="menu-mobile">
-                <ul> 
-                    <li v-if="this.$route.name != 'Projects'"><router-link to="/projects">Projects</router-link></li>
-                    <li v-if="this.$route.name != 'About'"><router-link to="/about">About me</router-link></li>
-                    <li v-if="this.$route.name != 'Contact'"><router-link to="/contact">Contact</router-link></li>
-                </ul>
-            </div>
-
-        </div>
-    </header>
+  <header :class="{ active: burgerMenuActive }">
+    <div>
+      <router-link to="/">
+        <img src="../assets/logo.svg" alt="Logo Thomas Chheang"
+      /></router-link>
+    </div>
+    <div>
+      <i
+        @click.prevent="showMenu()"
+        v-if="windowWidth < 749 && !burgerMenuActive"
+        class="fas fa-bars burger"
+      ></i>
+      <i
+        style="color: white"
+        @click.prevent="showMenu()"
+        v-if="windowWidth < 749 && burgerMenuActive"
+        class="fas fa-times burger"
+      ></i>
+      <div v-if="windowWidth > 748 || burgerMenuActive" class="menu-mobile">
+        <ul>
+          <li v-if="this.$route.name != 'Projects'">
+            <router-link to="/projects">Projects</router-link>
+          </li>
+          <li v-if="this.$route.name != 'About'">
+            <router-link to="/about">About me</router-link>
+          </li>
+          <li v-if="this.$route.name != 'Contact'">
+            <router-link to="/contact">Contact</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 </template>
 
 <style lang="stylus" scoped>
 @import '../css/variables'
 
-header 
+header
     display flex
     align-items center
     height 80px
@@ -36,12 +52,12 @@ h1
     font-size 32px
     font-weight black
     text-align center
-    span 
+    span
         position absolute
         font-size 12px
         font-weight regular
         color $nightblue-color
-img 
+img
     height 50px
     margin-right 15px
 
@@ -56,30 +72,30 @@ ul
         width 100%
 
 .menu-mobile
-    @media mobile 
-        position fixed 
+    @media mobile
+        position fixed
         left 0
         top 80px
         width 100%
         background $black-color
         height calc(100vh - 80px)
-        
+
 
 li
     display inline-block
     margin 0 10px
-    @media mobile 
+    @media mobile
         margin 40px 0
 
 
 a
     color $gray-color
-    text-decoration none 
+    text-decoration none
     font-weight 500
     font-size 14px
     &:hover
         text-decoration underline
-    @media mobile 
+    @media mobile
         color $white-color
         font-size 45px
         font-weight bold
@@ -90,7 +106,7 @@ a
 .burger
     font-size 20px
 
-.active 
+.active
     position fixed
     width calc(100% - 100px)
     background $black-color
@@ -98,44 +114,43 @@ a
 
 <script>
 export default {
-    data() {
-        return {
-            windowWidth: 0,
-            burgerMenuActive: false,
-        }
-    },
+  data() {
+    return {
+      windowWidth: 0,
+      burgerMenuActive: false,
+    };
+  },
 
-    mounted() {
-        this.$nextTick(function() {
-            window.addEventListener('resize', this.getWindowWidth);
-            //Init
-            this.getWindowWidth()
-        })
+  mounted() {
+    this.$nextTick(function () {
+      window.addEventListener("resize", this.getWindowWidth);
+      //Init
+      this.getWindowWidth();
+    });
+  },
+  computed: {
+    currentRouteName() {
+      return this.$route.name;
     },
-    computed: {
-        currentRouteName() {
-            return this.$route.name;
-        }
+  },
+  watch: {
+    /* eslint rule disable"*/
+    $route(to, from) {
+      this.burgerMenuActive = false;
     },
-    watch:{
-        /* eslint rule disable"*/
-        $route (to, from){
-            this.burgerMenuActive = false;
-        }
-        /* eslint rule disable"*/
+    /* eslint rule disable"*/
+  },
+  methods: {
+    getWindowWidth() {
+      this.windowWidth = document.documentElement.clientWidth;
     },
-    methods: {
-        getWindowWidth() {
-            this.windowWidth = document.documentElement.clientWidth;
-        },
-        showMenu(){
-            this.burgerMenuActive = !this.burgerMenuActive;
-        }
+    showMenu() {
+      this.burgerMenuActive = !this.burgerMenuActive;
     },
-
-    beforeDestroy() {
-        window.removeEventListener('resize', this.getWindowWidth);
-        window.removeEventListener('resize', this.getWindowHeight);
-    }
-}
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.getWindowWidth);
+    window.removeEventListener("resize", this.getWindowHeight);
+  },
+};
 </script>
