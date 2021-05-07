@@ -134,11 +134,11 @@ export default {
     },
   },
   watch: {
-/* eslint rule disable"*/
+    // eslint-disable-next-line no-unused-vars
     $route(to, from) {
+    // eslint-disable-next-line no-unused-vars
       this.burgerMenuActive = false;
     },
-/* eslint rule disable"*/
   },
   methods: {
     getWindowWidth() {
