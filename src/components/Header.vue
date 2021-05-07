@@ -134,11 +134,11 @@ export default {
     },
   },
   watch: {
-    /* eslint rule disable"*/
+/* eslint rule disable"*/
     $route(to, from) {
       this.burgerMenuActive = false;
     },
-    /* eslint rule disable"*/
+/* eslint rule disable"*/
   },
   methods: {
     getWindowWidth() {
