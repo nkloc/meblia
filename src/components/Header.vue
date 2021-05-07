@@ -118,9 +118,11 @@ export default {
         }
     },
     watch:{
+        /* eslint rule disable"*/
         $route (to, from){
             this.burgerMenuActive = false;
         }
+        /* eslint rule disable"*/
     },
     methods: {
         getWindowWidth() {
