@@ -1,28 +1,7 @@
 <template>
   <section>
-    <h2 style="margin-top: 3vh">
-      Hello ! <br />
-      I'm Thomas.
-    </h2>
-    <img class="image-scroll" src="../assets/effet-scroll.png" alt="" />
-    <h4>
-      Digital management student <br />
-      & <br />
-      UI Designer Free-lance
-    </h4>
-    <div class="links">
-      <img src="../assets/linkedin.svg" alt="Logo Linkedin" />
-      <img src="../assets/Dribble.svg" alt="Logo Dribble" />
-      <img src="../assets/Behance.svg" alt="Logo Behance" />
-    </div>
-    <p>chheangthomas@gmail.com</p>
-    <h4>
-      Specialized in <br />
-      UI Design
-    </h4>
     <div class="container-double">
-      <h5 class="title">Hover over the cards</h5>
-
+      <h5 class="title">Produits</h5>
       <div class="container">
         <Card
           data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop="
@@ -57,30 +36,6 @@
           </p>
         </Card>
       </div>
-    </div>
-    <h4>Latest Project</h4>
-    <div class="last-project">
-      <router-link to="/projects/cuure"
-        ><img src="../assets/Cuure.svg" alt="Projet Cuure"
-      /></router-link>
-      <router-link to="/projects">All Projects</router-link>
-    </div>
-    <h4>
-      Soft Skills & <br />
-      Experiences
-    </h4>
-    <div class="container-exp">
-      <Exp exp="Cuure" poste="Graphic Designer" alt="Logo Cuure"></Exp>
-      <Exp
-        exp="Reachmaker"
-        poste="Graphic Designer"
-        alt="Logo Reachmaker"
-      ></Exp>
-      <Exp
-        exp="Web School Factory"
-        poste="Graphic Designer"
-        alt="Logo Web School Factory"
-      ></Exp>
     </div>
   </section>
 </template>
