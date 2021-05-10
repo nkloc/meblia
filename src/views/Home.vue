@@ -49,6 +49,7 @@
 <style lang="stylus" scoped>
 @import '../css/variables'
 
+
 section
     display flex
     flex-direction column
@@ -65,8 +66,8 @@ section
       background-repeat no-repeat
       background-size cover
       background-position bottom center
-      padding-left 10%
       h2
+        padding-left 10%
         color white
         font-weight 600
         font-size 40px
@@ -75,6 +76,7 @@ section
         margin-bottom 5vh
         letter-spacing 110%
       button
+        margin-left 10%
         display block
         background-color #D57674
         padding 16px 50px

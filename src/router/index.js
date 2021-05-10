@@ -38,7 +38,7 @@ const routes = [
     component: Product,
     meta: {
       title: "Cuure",
-      titleProjet: "Le projet cuure...",
+      titleProduct: "Le projet cuure...",
       toolUsed: {
         figma: {
           descriptionProduct:

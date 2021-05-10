@@ -68,27 +68,27 @@ ul
     list-style-type none
     padding 0
     @media mobile
-        display flex
-        flex-direction column
-        align-items center
-        justify-content center
-        width 100%
+      display flex
+      flex-direction column
+      align-items center
+      justify-content center
+      width 100%
 
 .menu-mobile
     @media mobile
-        position fixed
-        left 0
-        top 80px
-        width 100%
-        background $black-color
-        height calc(100vh - 80px)
+      position fixed
+      left 0
+      top 80px
+      width 100%
+      background $black-color
+      height calc(100vh - 80px)
 
 
 li
     display inline-block
     margin 0 10px
     @media mobile
-        margin 40px 0
+      margin 40px 0
 
 
 a
@@ -97,14 +97,14 @@ a
     font-weight 500
     font-size 14px
     &:hover
-        text-decoration underline
+      text-decoration underline
     @media mobile
-        color $white-color
-        font-size 45px
-        font-weight bold
-        text-transform uppercase
-        &:hover
-            text-decoration none
+      color $white-color
+      font-size 45px
+      font-weight bold
+      text-transform uppercase
+      &:hover
+        text-decoration none
 
 .burger
     font-size 20px
