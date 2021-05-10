@@ -1,5 +1,11 @@
 <template>
   <section>
+    <div class="slider">
+      <div>
+        <h2>Les produits que vous allez aimer.</h2>
+        <button>Découvrir</button>
+      </div>
+    </div>
     <div class="container-double">
       <h5 class="title">Produits</h5>
       <div class="container">
@@ -50,9 +56,35 @@ section
     align-items center
     background white
     color $gray-color
-    padding 0 5vh
     @media tablet
       padding 0 2vh
+    .slider
+      width 100vw
+      height 35vw
+      background-image url('..//assets/meubles/slider_image.png')
+      background-repeat no-repeat
+      background-size cover
+      background-position bottom center
+      padding-left 10%
+      h2
+        color white
+        font-weight 600
+        font-size 40px
+        line-height 48px
+        max-width 25%
+        margin-bottom 5vh
+        letter-spacing 110%
+      button
+        display block
+        background-color #D57674
+        padding 16px 50px
+        color white
+        font-weight 600
+        font-size 24px
+        line-height 36px
+        outline none
+        border none
+
     .container-double
       display flex
       flex-direction column
