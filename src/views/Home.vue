@@ -129,12 +129,10 @@ section
 
 <script>
 import Card from "../components/templates/Card.vue";
-import Exp from "../components/templates/Exp.vue";
 
 export default {
   components: {
     Card: Card,
-    Exp: Exp,
   },
 };
 </script>
