@@ -20,10 +20,10 @@
       <div v-if="windowWidth > 748 || burgerMenuActive" class="menu-mobile">
         <ul>
           <li v-if="this.$route.name != 'Projects'">
-            <router-link to="/projects">Projects</router-link>
+            <router-link to="/projects">Products</router-link>
           </li>
           <li v-if="this.$route.name != 'About'">
-            <router-link to="/about">About me</router-link>
+            <router-link to="/about">About us</router-link>
           </li>
           <li v-if="this.$route.name != 'Contact'">
             <router-link to="/contact">Contact</router-link>

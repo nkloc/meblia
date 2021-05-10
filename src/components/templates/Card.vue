@@ -67,9 +67,9 @@ h1+p, p+p
       box-shadow: rgba(white, 0.2) 0 0 40px 5px, rgba(white, 1) 0 0 0 1px, rgba(black, 0.66) 0 30px 60px 0, inset #333333 0 0 0 5px, inset white 0 0 0 6px
 .card
   position: relative
-  flex: 0 0 240px
-  width: 240px
-  height: 320px
+  flex: 0 0 300px
+  width: 300px
+  height: 400px
   background-color: #333
   overflow: hidden
   border-radius: 10px

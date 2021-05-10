@@ -4,15 +4,15 @@
       <h5 class="title">Produits</h5>
       <div class="container">
         <Card
-          data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop="
+          data-image="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80"
         >
-          <h5 slot="header">Canyons</h5>
+          <h5 slot="header">Chaise de cuisine</h5>
           <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Une chaise classique, parce qu'il en faut pour tous les goûts.
           </p>
         </Card>
         <Card
-          data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
+          data-image="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1143&q=80"
         >
           <h5 slot="header">Beaches</h5>
           <p slot="content">
@@ -53,70 +53,24 @@ section
     padding 0 5vh
     @media tablet
       padding 0 2vh
-    .image-scroll
-      margin-top 3vh
-      @media tablet-up
-        margin-top 5vh
-    h2,h3,h4
-      text-align center
-      font-weight bold
-      margin-top 5vh
-      @media tablet-up
-        margin-top 10vh
-    h2,h3
-      font-size 90px
-      line-height 99px
-      @media tablet
-        font-size 35px
-        line-height 45px
-    h4
-      font-size 70px
-      line-height 77px
-      @media tablet
-        font-size 24px
-        line-height 32px
-    .links
-      display flex
-      align-items center
-      width 100vw
-      justify-content center
-      margin 10vh 0 3vh 0
-      @media tablet
-        justify-content space-around
-        margin 5vh 0 2vh
-        width 90vw
-      img
-        height 150px
-        margin 0 5vh
-        @media tablet
-          height 100px
-          margin 0
-    .last-project
+    .container-double
       display flex
       flex-direction column
       align-items center
-      justify-content center
-      text-align center
-      margin 10vh 0 3vh 0
-      @media tablet
-        margin 5vh 0 2vh 0
-      img
-        width 30vw
-      a
-        text-decoration none
-        color $lightgray-color
-        margin-top 2vh
-        font-weight 500
-        font-size 14px
-    .container-double
-      display flex
-      align-items center
       width 100vw
       justify-content center
       margin 10vh 0 3vh 0
       @media tablet
         justify-content space-around
         margin 5vh 0 2vh 0
+        width 90vw
+      .title
+        margin 3vh 0
+      .container
+        display flex
+        flex-wrap wrap
+        flex-flow row wrap
+        align-items flex-start
         width 90vw
     p
       font-weight regular
