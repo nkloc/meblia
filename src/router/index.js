@@ -2,9 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
-import Projects from "../views/Projects.vue";
+import Products from "../views/Products.vue";
 import Contact from "../views/Contact.vue";
-import Project from "../views/Project.vue";
+import Product from "../views/Product.vue";
 
 Vue.use(VueRouter);
 
@@ -28,24 +28,24 @@ const routes = [
     component: Contact,
   },
   {
-    path: "/projects",
-    name: "Projects",
-    component: Projects,
+    path: "/Products",
+    name: "Products",
+    component: Products,
   },
   {
-    path: "/project/cuure",
-    name: "Project",
-    component: Project,
+    path: "/Product/cuure",
+    name: "Product",
+    component: Product,
     meta: {
       title: "Cuure",
       titleProjet: "Le projet cuure...",
       toolUsed: {
         figma: {
-          descriptionProject:
+          descriptionProduct:
             "Description de l'utilisation de l'outil au sein du poste",
         },
         illustrator: {
-          descriptionProject:
+          descriptionProduct:
             "Description de l'utilisation de l'outil au sein du poste",
         },
       },
