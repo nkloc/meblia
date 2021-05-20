@@ -2,45 +2,46 @@
   <section>
     <div class="slider">
       <div>
-        <h2>Les produits que vous allez aimer.</h2>
+        <h2>
+          Les produits que <br />
+          vous allez aimer.
+        </h2>
+        <p>
+          Avec plus de 50 ans d'expertise, nous vous <br />
+          proposons une sélection d'équipements.
+        </p>
         <button>Découvrir</button>
       </div>
     </div>
-    <div class="container-double">
-      <h5 class="title">Produits</h5>
-      <div class="container">
-        <Card
-          data-image="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80"
-        >
-          <h5 slot="header">Chaise de cuisine</h5>
-          <p slot="content">
-            Une chaise classique, parce qu'il en faut pour tous les goûts.
-          </p>
+    <div class="container">
+      <div class="selection">
+        <h5>Notre sélection</h5>
+        <p>
+          Avec plus de 50 ans d'expertise, nous vous proposons une sélection
+          d'équipements.
+        </p>
+        <button><i class="fas fa-arrow-right"></i></button>
+      </div>
+      <router-link to="/kursii">
+        <Card :bg="'Kursii/image-3.png'">
+          <h5 slot="header">Chaise Kursii</h5>
+          <p slot="content">439 €</p>
         </Card>
-        <Card
-          data-image="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1143&q=80"
-        >
-          <h5 slot="header">Beaches</h5>
-          <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </Card>
-        <Card
-          data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
-        >
-          <h5 slot="header">Trees</h5>
-          <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </Card>
-        <Card
-          data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop="
-        >
-          <h5 slot="header">Lakes</h5>
-          <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </Card>
+      </router-link>
+      <Card :bg="'misbah/image-home.png'">
+        <h5 slot="header">Lampe Misbah</h5>
+        <p slot="content">407 €</p>
+      </Card>
+      <Card :bg="'tawila/image-home.png'">
+        <h5 slot="header">Table Tawila</h5>
+        <p slot="content">362 €</p>
+      </Card>
+    </div>
+    <div class="slider2">
+      <div>
+        <p>Collection été</p>
+        <h2>Rafraîchissez votre intérieur</h2>
+        <button>Acheter</button>
       </div>
     </div>
   </section>
@@ -49,6 +50,9 @@
 <style lang="stylus" scoped>
 @import '../css/variables'
 
+a
+  color inherit
+  text-decoration none
 
 section
     display flex
@@ -59,53 +63,91 @@ section
     color $gray-color
     @media tablet
       padding 0 2vh
+    .slider2
+      width 90vw
+      height 90vh
+      background-size 90vw 90vh
+      background-image url('../assets/meuble/home/image-secondaire.png')
+      align-items flex-end
+      p
+        font-size 36px
+        line-height 45px
+      h2
+        white-space nowrap
+      p,h2,button
+        position relative 
+        top -50px
     .slider
       width 100vw
-      height 35vw
-      background-image url('..//assets/meubles/slider_image.png')
+      height 100vh
+      background-image url('../assets/meuble/home/image-principale.png')
+      background-size 100vw 100vh
+      align-items center
+    .slider,.slider2
       background-repeat no-repeat
-      background-size cover
-      background-position bottom center
-      h2
-        padding-left 10%
+      background-position center center
+      display flex
+      h2, p
+        margin-left 50px
         color white
-        font-weight 600
-        font-size 40px
-        line-height 48px
-        max-width 25%
         margin-bottom 5vh
-        letter-spacing 110%
+        letter-spacing 105%
+        max-width 45vw
+      h2
+        font-weight 600
+        font-size 60px
+        line-height 65px
+        letter-spacing 95%
       button
-        margin-left 10%
+        margin-left 50px
         display block
-        background-color #D57674
-        padding 16px 50px
+        background-color $green-color
+        padding 20px 70px
         color white
         font-weight 600
         font-size 24px
         line-height 36px
         outline none
         border none
-
-    .container-double
+        &:hover
+          cursor pointer
+    .container
       display flex
-      flex-direction column
-      align-items center
-      width 100vw
+      flex-wrap wrap
+      flex-flow row wrap
+      align-items space-around
       justify-content center
-      margin 10vh 0 3vh 0
-      @media tablet
-        justify-content space-around
-        margin 5vh 0 2vh 0
-        width 90vw
-      .title
-        margin 3vh 0
-      .container
-        display flex
-        flex-wrap wrap
-        flex-flow row wrap
-        align-items flex-start
-        width 90vw
+      width 95vw
+      margin 10vh 0
+      .selection
+        width 310px
+        height 470px
+        background-color $green-color
+        color white
+        padding 30px
+        letter-spacing 95%
+        position relative
+        h5
+          font-weight 600
+          font-size 28px
+          line-height 36px
+          margin-bottom 25px
+          margin-top 15px
+        p
+          font-size 18px
+          font-weight 400
+        button
+          position absolute
+          bottom 30px
+          right 30px
+          background transparent
+          outline none
+          border none
+          cursor pointer
+          color white
+          font-size 25px
+      div
+        margin 5px 5px
     p
       font-weight regular
       font-size 20px

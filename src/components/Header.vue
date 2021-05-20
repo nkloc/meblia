@@ -23,13 +23,13 @@
             <router-link to="/">Accueil</router-link>
           </li>
           <li v-if="this.$route.name != 'products'">
-            <router-link to="/products">Nos produits</router-link>
+            <router-link to="/products">Produits</router-link>
           </li>
-          <li v-if="this.$route.name != 'About'">
-            <router-link to="/about">About us</router-link>
+          <li v-if="this.$route.name != 'Services'">
+            <router-link to="/services">Services</router-link>
           </li>
           <li v-if="this.$route.name != 'Contact'">
-            <router-link to="/contact">Contact</router-link>
+            <router-link to="/contact">Nous contacter</router-link>
           </li>
         </ul>
       </div>
@@ -41,12 +41,16 @@
 @import '../css/variables'
 
 header
+    position absolute
     display flex
     align-items center
+    width calc(100vw - 100px)
     height 80px
-    background white
+    background transparent
     justify-content space-between
     padding 0 50px
+    img
+      height 35px
     div
         display flex
         align-items center
