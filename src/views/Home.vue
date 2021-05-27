@@ -28,14 +28,18 @@
           <p slot="content">439 €</p>
         </Card>
       </router-link>
+      <router-link to="/misbah">
       <Card :bg="'misbah/image-home.png'">
         <h5 slot="header">Lampe Misbah</h5>
         <p slot="content">407 €</p>
       </Card>
+      </router-link>
+      <router-link to="/tawila">
       <Card :bg="'tawila/image-home.png'">
         <h5 slot="header">Table Tawila</h5>
         <p slot="content">362 €</p>
       </Card>
+      </router-link>
     </div>
     <div class="slider2">
       <div>
@@ -76,7 +80,7 @@ section
         white-space nowrap
       p,h2,button
         position relative 
-        top -50px
+        top -75px
     .slider
       width 100vw
       height 100vh
