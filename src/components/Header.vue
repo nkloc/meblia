@@ -2,7 +2,7 @@
   <header :class="{ active: burgerMenuActive }">
     <div>
       <router-link to="/">
-        <img src="../assets/logo.svg" alt="Logo Thomas Chheang"
+        <img src="../assets/logo.svg" alt="Logo"
       /></router-link>
     </div>
     <div>
@@ -41,7 +41,7 @@
 @import '../css/variables'
 
 header
-    position absolute
+    // position absolute
     display flex
     align-items center
     width calc(100vw - 100px)

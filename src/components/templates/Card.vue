@@ -9,8 +9,8 @@
 @import '../../css/variables'
 
 .card
-  width 310px
-  height 470px
+  width 18vw
+  height 27vw
   background-repeat no-repeat
   background-size cover
   background-position center center

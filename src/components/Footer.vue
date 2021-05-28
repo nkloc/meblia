@@ -31,14 +31,15 @@
       <i class="fab fa-pinterest-p"></i>
     </div>
     <div class="newsletter">
-      <h2>
-        Rejoignez notre newsletter
-      </h2>
-      <p>
-        Recevez des promotions et des nouvelles en vous inscrivant.
-      </p>
+      <h2>Rejoignez notre newsletter</h2>
+      <p>Recevez des promotions et des nouvelles en vous inscrivant.</p>
       <div class="input">
-        <input type="email" id="email" name="email" placeholder="Your email..">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email.."
+        />
         <button>S'inscrire</button>
       </div>
     </div>
@@ -49,7 +50,7 @@
 @import '../css/variables'
 
 .input
-  display flex 
+  display flex
   justify-content flex-start
   width 100%
   input
@@ -58,8 +59,8 @@
     border-bottom-left-radius 0px
     border-bottom-right-radius 0px
     border-top transparent
-    border-left transparent 
-    border-right transparent  
+    border-left transparent
+    border-right transparent
     margin-right 8px
     border-bottom 1px solid #858585
     background-color transparent
@@ -69,14 +70,14 @@
     padding-left 8px
     &:focus
       outline none
-  button 
+  button
     padding 16px 32px
     background-color $lightgrey-color
     color black
     border none
     outline none
     cursor pointer
-  
+
 footer
     min-height 280px
     margin-top 10vh
@@ -93,8 +94,8 @@ footer
       h3,h2
         width 100%
         align-self left
-      ul 
-        li 
+      ul
+        li
           list-style none
           color $lightgray-color
           margin-bottom 4px

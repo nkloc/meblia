@@ -29,16 +29,16 @@
         </Card>
       </router-link>
       <router-link to="/misbah">
-      <Card :bg="'misbah/image-home.png'">
-        <h5 slot="header">Lampe Misbah</h5>
-        <p slot="content">407 €</p>
-      </Card>
+        <Card :bg="'misbah/image-home.png'">
+          <h5 slot="header">Lampe Misbah</h5>
+          <p slot="content">407 €</p>
+        </Card>
       </router-link>
       <router-link to="/tawila">
-      <Card :bg="'tawila/image-home.png'">
-        <h5 slot="header">Table Tawila</h5>
-        <p slot="content">362 €</p>
-      </Card>
+        <Card :bg="'tawila/image-home.png'">
+          <h5 slot="header">Table Tawila</h5>
+          <p slot="content">362 €</p>
+        </Card>
       </router-link>
     </div>
     <div class="slider2">
@@ -79,7 +79,7 @@ section
       h2
         white-space nowrap
       p,h2,button
-        position relative 
+        position relative
         top -75px
     .slider
       width 100vw
@@ -124,8 +124,8 @@ section
       width 95vw
       margin 10vh 0
       .selection
-        width 310px
-        height 470px
+        width 18vw
+        height 27vw
         background-color $green-color
         color white
         padding 30px
