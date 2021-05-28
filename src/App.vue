@@ -36,4 +36,6 @@ export default {
   line-height 24px
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
+  max-width 100%
+  overflow hidden
 </style>
