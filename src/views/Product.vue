@@ -42,7 +42,7 @@
             {{ $route.meta.dimensions }}
           </p>
 
-          <router-link to="/panier"><button>Acheter</button></router-link>
+          <a href="/panier"><button>Acheter</button></a>
         </div>
       </div>
     </div>
