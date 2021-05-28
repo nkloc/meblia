@@ -1,9 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
-import Products from "../views/Products.vue";
 import Contact from "../views/Contact.vue";
+import Panier from "../views/Panier.vue";
 import Product from "../views/Product.vue";
 
 Vue.use(VueRouter);
@@ -15,22 +14,14 @@ const routes = [
     component: Home,
   },
   {
-    path: "/services",
-    name: "Services",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: About,
-  },
-  {
     path: "/contact",
     name: "Contact",
     component: Contact,
   },
   {
-    path: "/Products",
-    name: "Products",
-    component: Products,
+    path: "/panier",
+    name: "Panier",
+    component: Panier,
   },
   {
     path: "/kursii",
@@ -84,7 +75,7 @@ const routes = [
     meta: {
       product: "Musanad",
       title: "Pouf Musanad",
-      price: "100 €",
+      price: "199 €",
       imgPath: "Musanad",
       desc: `Intemporel, confortable et pratique - ce sont les caractéristiques essentielles du pouf classique Sternzeit. 
       Les magnifiques pieds en bois de hêtre massif recyclé sont fabriqués de manière artisanale, puis teintés et laqués transparents. Le rembourrage confortable est soutenu par une solide suspension métallique. `,

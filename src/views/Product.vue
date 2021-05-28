@@ -42,7 +42,7 @@
             {{ $route.meta.dimensions }}
           </p>
 
-          <button>Acheter</button>
+          <router-link to="/panier"><button>Acheter</button></router-link>
         </div>
       </div>
     </div>
@@ -77,7 +77,6 @@
     <div class="product__others">
       <h2>D’autres personnes ont également acheté :</h2>
       <div class="product__similar">
-
         <a v-if="path != 'Kursii'" href="/kursii">
           <Card :bg="'Kursii/image-3.png'">
             <h5 slot="header">Chaise Kursii</h5>
@@ -99,13 +98,13 @@
         <a v-if="path != 'Musanad'" href="/Musanad">
           <Card :bg="'Musanad/image-home.png'">
             <h5 slot="header">Pouf Musanad</h5>
-            <p slot="content">100 €</p>
+            <p slot="content">199 €</p>
           </Card>
         </a>
         <a v-if="path != 'Karsa'" href="/Karsa">
           <Card :bg="'Karsa/image-home.png'">
             <h5 slot="header">Chaise Karsa</h5>
-            <p slot="content">100 €</p>
+            <p slot="content">357 €</p>
           </Card>
         </a>
       </div>

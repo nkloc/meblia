@@ -22,12 +22,6 @@
           <li v-if="this.$route.name != 'Home'">
             <router-link to="/">Accueil</router-link>
           </li>
-          <li v-if="this.$route.name != 'products'">
-            <router-link to="/products">Produits</router-link>
-          </li>
-          <li v-if="this.$route.name != 'Services'">
-            <router-link to="/services">Services</router-link>
-          </li>
           <li v-if="this.$route.name != 'Contact'">
             <router-link to="/contact">Nous contacter</router-link>
           </li>
